@@ -1,0 +1,107 @@
+{
+  "configVersion": 1,
+  "timestamp": 1683464720662,
+  "index": "/meet-landing-page/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/meet-landing-page/index.html",
+        "/meet-landing-page/main.79a56e8f8cfb4240.js",
+        "/meet-landing-page/manifest.webmanifest",
+        "/meet-landing-page/polyfills.edb405328af01631.js",
+        "/meet-landing-page/runtime.75e10885e5b79ea0.js",
+        "/meet-landing-page/styles.ac4de679e9e5ba95.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/meet-landing-page/assets/desktop/image-footer.jpg",
+        "/meet-landing-page/assets/desktop/image-hero-left.png",
+        "/meet-landing-page/assets/desktop/image-hero-right.png",
+        "/meet-landing-page/assets/desktop/image-man-texting.jpg",
+        "/meet-landing-page/assets/desktop/image-men-in-meeting.jpg",
+        "/meet-landing-page/assets/desktop/image-woman-in-videocall.jpg",
+        "/meet-landing-page/assets/desktop/image-women-videochatting.jpg",
+        "/meet-landing-page/assets/favicon.ico",
+        "/meet-landing-page/assets/icons/icon-128x128.png",
+        "/meet-landing-page/assets/icons/icon-144x144.png",
+        "/meet-landing-page/assets/icons/icon-152x152.png",
+        "/meet-landing-page/assets/icons/icon-192x192.png",
+        "/meet-landing-page/assets/icons/icon-328x328.png",
+        "/meet-landing-page/assets/icons/icon-512x512.png",
+        "/meet-landing-page/assets/icons/icon-72x72.png",
+        "/meet-landing-page/assets/icons/icon-96x96.png",
+        "/meet-landing-page/assets/logo/logo.svg",
+        "/meet-landing-page/assets/mobile/image-footer.jpg",
+        "/meet-landing-page/assets/tablet/image-footer.jpg",
+        "/meet-landing-page/assets/tablet/image-hero.png",
+        "/meet-landing-page/image-footer.0a0e5cc785046ff2.jpg",
+        "/meet-landing-page/image-footer.fb572b2846fa5579.jpg"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/meet-landing-page/assets/desktop/image-footer.jpg": "c2a3dadabbcb5dcf1f4f8f51d7aeaee39f717657",
+    "/meet-landing-page/assets/desktop/image-hero-left.png": "6521aa5c76e3190bdc41af2fbe403a26bf5eca65",
+    "/meet-landing-page/assets/desktop/image-hero-right.png": "a96000e97af8a809be4a1f4f2f28554731921042",
+    "/meet-landing-page/assets/desktop/image-man-texting.jpg": "b31227735b3c8806148a21483c7e206b932a6f93",
+    "/meet-landing-page/assets/desktop/image-men-in-meeting.jpg": "d9be55418180d442669cec678def94dd99b1c846",
+    "/meet-landing-page/assets/desktop/image-woman-in-videocall.jpg": "f01effd420225f38b563d3e833972f9cbc59334b",
+    "/meet-landing-page/assets/desktop/image-women-videochatting.jpg": "b18cefc84bc08129a0be638c4e6d2cfff5392390",
+    "/meet-landing-page/assets/favicon.ico": "841c23323d2103d7c62747b974c68a60e3988bce",
+    "/meet-landing-page/assets/icons/icon-128x128.png": "3aceb04525306f366a9ecfcfc2421bfe62364125",
+    "/meet-landing-page/assets/icons/icon-144x144.png": "9a469d6c1da2b138c3de39299c4251bed9bdddc8",
+    "/meet-landing-page/assets/icons/icon-152x152.png": "25d35502abb7ad1bd12ba502104c6f1af144b031",
+    "/meet-landing-page/assets/icons/icon-192x192.png": "883762357486c4251178c3d9f6aa42bc023452a4",
+    "/meet-landing-page/assets/icons/icon-328x328.png": "5ceb157b99041be096389e0fd1deb1378d37b392",
+    "/meet-landing-page/assets/icons/icon-512x512.png": "a2a2a26b00754fd414b4d70c1237407475dfc3c3",
+    "/meet-landing-page/assets/icons/icon-72x72.png": "672f4478e50ffb3831a0669ef4b21d919a2bb507",
+    "/meet-landing-page/assets/icons/icon-96x96.png": "1d4b496d8f59db0249f3d91613ec418b182718e0",
+    "/meet-landing-page/assets/logo/logo.svg": "a10b64315bde0e420e561b9f47a22c9d7160ea78",
+    "/meet-landing-page/assets/mobile/image-footer.jpg": "8bbaeee06edc16c87a91288464b24bebaf622ac8",
+    "/meet-landing-page/assets/tablet/image-footer.jpg": "c2ef8d612a32866f6e8baf01034b48703a6c5153",
+    "/meet-landing-page/assets/tablet/image-hero.png": "b05e588ef45f541dc01437f4948279d073feb029",
+    "/meet-landing-page/image-footer.0a0e5cc785046ff2.jpg": "c2a3dadabbcb5dcf1f4f8f51d7aeaee39f717657",
+    "/meet-landing-page/image-footer.fb572b2846fa5579.jpg": "c2ef8d612a32866f6e8baf01034b48703a6c5153",
+    "/meet-landing-page/index.html": "2106b2c502a966fb7281c18b15eb967d6e89e2c1",
+    "/meet-landing-page/main.79a56e8f8cfb4240.js": "6b2f1c1fd36e86eede23bf6b3bb78de46677215d",
+    "/meet-landing-page/manifest.webmanifest": "f28abba3f25f73b00743b572c6fbe905d62a61fd",
+    "/meet-landing-page/polyfills.edb405328af01631.js": "ed55a7b297e8da5f3ade0f6cdaa71efa1c427982",
+    "/meet-landing-page/runtime.75e10885e5b79ea0.js": "a6abadaba1c60058b6c482feafd0808f39a88a77",
+    "/meet-landing-page/styles.ac4de679e9e5ba95.css": "9c7f89fa5dbb92e0393c4ff945ac0f21b85d76fd"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
