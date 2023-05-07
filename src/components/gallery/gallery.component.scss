@@ -1,0 +1,52 @@
+@use "../../styles/abstracts" as *;
+
+@mixin base {
+  div.gallery {
+    align-items: center;
+    column-gap: 2.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 15.1rem);
+    grid-template-rows: repeat(2, 14.3rem);
+    justify-content: center;
+    margin: 0 auto 6.4rem auto;
+    row-gap: 2.4rem;
+    width: 32.7rem;
+  }
+
+  img.images {
+    background: #d8d8d8;
+    border-radius: 0.8rem;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+:host {
+  @include breaks(mobile) {
+    @include base;
+  }
+
+  @include breaks(tablet) {
+    @include base;
+    div.gallery {
+      column-gap: 1.1rem;
+      grid-template-columns: repeat(4, 16.4rem);
+      grid-template-rows: 15.6rem;
+      margin: 0 auto 4.8rem auto;
+      row-gap: 0;
+      width: 68.9rem;
+    }
+  }
+
+  @include breaks(desktop) {
+    @include base;
+    div.gallery {
+      column-gap: 3rem;
+      grid-template-columns: repeat(4, 25.4rem);
+      grid-template-rows: 24.2rem;
+      margin: 0 auto 8rem auto;
+      row-gap: 0;
+      width: 110rem;
+    }
+  }
+}

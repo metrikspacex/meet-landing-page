@@ -1,7 +1,78 @@
 @use "../../styles/abstracts" as *;
 
 @mixin base {
-  & > section {
+  div.container {
+    &:nth-of-type(1) {
+      margin: 6.4rem 0;
+    }
+    &:nth-of-type(2) {
+      padding: 0 24px;
+    }
+    h1.title {
+      color: #4d96a9;
+      font-family: "Red Hat Display";
+      font-size: 1.6rem;
+      font-style: normal;
+      font-weight: 900;
+      letter-spacing: 0.4rem;
+      line-height: 2.6rem;
+      margin: 0 auto 2.4rem auto;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    h2.heading {
+      color: #28283d;
+      font-family: "Red Hat Display";
+      font-size: 3.2rem;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 3.6rem;
+      text-align: center;
+      margin: 0 auto 3.2rem auto;
+      width: 32.7rem;
+    }
+    p.para {
+      color: #87879d;
+      font-family: "Red Hat Display";
+      font-size: 1.6rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 2.6rem;
+      text-align: center;
+      margin: 0 auto 6.4rem auto;
+      width: 32.7rem;
+    }
+    & > div.bar {
+      background-color: #87879d;
+      grid-column: 1;
+      grid-row: 1;
+      margin: 0 auto;
+      mix-blend-mode: normal;
+      height: 8.4rem;
+      opacity: 0.25;
+      width: 0.2rem;
+    }
+    & > div.anchor {
+      align-items: center;
+      background: #fafafa;
+      border-radius: 2.9rem;
+      border: 0.1rem solid rgba(135, 135, 157, 0.25);
+      box-sizing: content-box;
+      display: flex;
+      justify-content: center;
+      height: 5.4rem;
+      margin: 0 auto;
+      width: 5.4rem;
+      z-index: 1;
+      & > p.number {
+        color: #87879d;
+        font-family: "Red Hat Display";
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 2.6rem;
+      }
+    }
   }
 }
 
@@ -12,9 +83,45 @@
 
   @include breaks(tablet) {
     @include base;
+    div.container {
+      &:nth-of-type(1) {
+        margin: 8rem 0 6.7rem 0;
+      }
+      h1.title {
+        margin: 0 auto 1.6rem auto;
+        width: 27.1em;
+      }
+      h2.heading {
+        font-size: 4rem;
+        line-height: 4.4rem;
+        width: 44.5rem;
+      }
+      p.para {
+        margin: 0 auto 8rem auto;
+        width: 57.3rem;
+      }
+    }
   }
 
   @include breaks(desktop) {
     @include base;
+    div.container {
+      &:nth-of-type(1) {
+        margin: 11rem 0 6.4rem 0;
+      }
+      h1.title {
+        margin: 0 auto 1.6rem auto;
+      }
+      h2.heading {
+        font-size: 4rem;
+        line-height: 4.4rem;
+        width: 44.5rem;
+      }
+      p.para {
+        font-size: 1.8rem;
+        margin: 0 auto 7.2rem auto;
+        width: 54rem;
+      }
+    }
   }
 }
