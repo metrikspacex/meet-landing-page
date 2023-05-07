@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1683464720662,
+  "timestamp": 1683501145765,
   "index": "/meet-landing-page/index.html",
   "assetGroups": [
     {
@@ -12,7 +12,7 @@
       },
       "urls": [
         "/meet-landing-page/index.html",
-        "/meet-landing-page/main.79a56e8f8cfb4240.js",
+        "/meet-landing-page/main.093f7bb8d046c329.js",
         "/meet-landing-page/manifest.webmanifest",
         "/meet-landing-page/polyfills.edb405328af01631.js",
         "/meet-landing-page/runtime.75e10885e5b79ea0.js",
@@ -49,7 +49,10 @@
         "/meet-landing-page/assets/tablet/image-footer.jpg",
         "/meet-landing-page/assets/tablet/image-hero.png",
         "/meet-landing-page/image-footer.0a0e5cc785046ff2.jpg",
-        "/meet-landing-page/image-footer.fb572b2846fa5579.jpg"
+        "/meet-landing-page/image-footer.fb572b2846fa5579.jpg",
+        "/meet-landing-page/image-hero-left.51d564ad49d79232.png",
+        "/meet-landing-page/image-hero-right.f5c30a493f4c1a06.png",
+        "/meet-landing-page/image-hero.12e8b2e66197a4aa.png"
       ],
       "patterns": []
     }
@@ -78,8 +81,11 @@
     "/meet-landing-page/assets/tablet/image-hero.png": "b05e588ef45f541dc01437f4948279d073feb029",
     "/meet-landing-page/image-footer.0a0e5cc785046ff2.jpg": "c2a3dadabbcb5dcf1f4f8f51d7aeaee39f717657",
     "/meet-landing-page/image-footer.fb572b2846fa5579.jpg": "c2ef8d612a32866f6e8baf01034b48703a6c5153",
-    "/meet-landing-page/index.html": "2106b2c502a966fb7281c18b15eb967d6e89e2c1",
-    "/meet-landing-page/main.79a56e8f8cfb4240.js": "6b2f1c1fd36e86eede23bf6b3bb78de46677215d",
+    "/meet-landing-page/image-hero-left.51d564ad49d79232.png": "6521aa5c76e3190bdc41af2fbe403a26bf5eca65",
+    "/meet-landing-page/image-hero-right.f5c30a493f4c1a06.png": "a96000e97af8a809be4a1f4f2f28554731921042",
+    "/meet-landing-page/image-hero.12e8b2e66197a4aa.png": "b05e588ef45f541dc01437f4948279d073feb029",
+    "/meet-landing-page/index.html": "820d01f89a1f3dec3d7cbe9e058f31e710a48693",
+    "/meet-landing-page/main.093f7bb8d046c329.js": "6a2494dd18c280ec30b638f67390c8289cbdf87c",
     "/meet-landing-page/manifest.webmanifest": "f28abba3f25f73b00743b572c6fbe905d62a61fd",
     "/meet-landing-page/polyfills.edb405328af01631.js": "ed55a7b297e8da5f3ade0f6cdaa71efa1c427982",
     "/meet-landing-page/runtime.75e10885e5b79ea0.js": "a6abadaba1c60058b6c482feafd0808f39a88a77",
