@@ -1,0 +1,24 @@
+@use "../../styles/abstracts" as *;
+
+:host {
+  @include breaks(mobile) {
+    & > svg {
+      margin-bottom: 54px;
+      margin-top: 48px;
+    }
+  }
+
+  @include breaks(tablet) {
+    & > svg {
+      margin-bottom: 64px;
+      margin-top: 48px;
+    }
+  }
+
+  @include breaks(desktop) {
+    & > svg {
+      margin-bottom: 61px;
+      margin-top: 80px;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+@use "abstracts" as *;
+
+@mixin base {
+  display: grid;
+  grid-template-columns: 1fr;
+  min-height: 100vh;
+}
+
+:host {
+  @include breaks(mobile) {
+    @include base;
+    grid-template-rows: 13rem 1fr 54rem;
+    max-width: 76.8rem;
+  }
+
+  @include breaks(tablet) {
+    @include base;
+    grid-template-rows: 14rem 1fr 54rem;
+    max-width: 144rem;
+  }
+
+  @include breaks(desktop) {
+    @include base;
+    grid-template-rows: 16.9rem 1fr 42rem;
+    min-width: 144rem;
+  }
+}

@@ -1,0 +1,196 @@
+@use "../../styles/abstracts" as *;
+
+/**
+ * Realizing this is bad for targeting elements
+ * but getting on the right track.
+ *
+ * (1) Right layout for mobile using utilities
+ *     classes rather than nesting.
+ * (2) Create base mixin.
+ * (3) Add base to tablet / desktop.
+ * (4) target the classes in tablet and desktop.
+ */
+@mixin base {
+  display: block;
+  grid-column: 1;
+  grid-row: 3;
+  & > footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 8.4rem 2.8rem 42.8rem;
+    & > div.bar {
+      background-color: #87879d;
+      grid-column: 1;
+      grid-row: 1;
+      margin: 0 auto;
+      mix-blend-mode: normal;
+      opacity: 0.25;
+      width: 0.1rem;
+    }
+    & > div.anchor {
+      align-items: center;
+      background: #fafafa;
+      border-radius: 2.9rem;
+      border: 0.1rem solid rgba(135, 135, 157, 0.25);
+      box-sizing: content-box;
+      display: flex;
+      justify-content: center;
+      height: 5.4rem;
+      margin: 0 auto;
+      width: 5.4rem;
+      z-index: 1;
+      & > p.number {
+        color: #87879d;
+        font-family: "Red Hat Display";
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 2.6rem;
+      }
+    }
+    & > div.container {
+      background-color: #4d96a9;
+      grid-column: 1;
+      grid-row: 3;
+      height: 100%;
+      padding: 0 24px;
+      position: relative;
+      z-index: 0;
+      & > img.img-footer {
+        background-image: url("../../assets/tablet/image-footer.jpg");
+        background-position: top 0 left 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: block;
+        height: 100%;
+        left: 0;
+        margin: 0 auto;
+        mix-blend-mode: normal;
+        opacity: 0.1;
+        position: absolute;
+        top: 0;
+        width: 100%;
+      }
+      & > h1.heading {
+        color: #fafafa;
+        font-family: "Red Hat Display";
+        font-size: 3.2rem;
+        font-style: normal;
+        font-weight: 900;
+        height: 7.2rem;
+        line-height: 3.6rem;
+        margin: 9.2rem auto 0 auto;
+        text-align: center;
+        width: 32.7rem;
+      }
+      & > h2.subheading {
+        color: #fafafa;
+        font-family: "Red Hat Display";
+        font-size: 1.8rem;
+        font-style: normal;
+        font-weight: 500;
+        height: 7.8rem;
+        line-height: 2.6rem;
+        margin: 2.4rem auto 0 auto;
+        text-align: center;
+        width: 32.7rem;
+      }
+      & > button.btn {
+        background: #855fb1;
+        border-radius: 2.9rem;
+        border: 0;
+        display: block;
+        height: 5.8rem;
+        margin: 3.2rem auto 7.2rem auto;
+        outline-color: transparent;
+        width: 19.3rem;
+        & > span {
+          font-family: "Red Hat Display";
+          font-size: 1.6rem;
+          font-style: normal;
+          font-weight: 900;
+          line-height: 2.6rem;
+          &.download {
+            color: #ffffff;
+          }
+          &.version {
+            color: #d9b8ff;
+          }
+        }
+      }
+    }
+  }
+}
+
+:host {
+  @include breaks(mobile) {
+    @include base;
+  }
+
+  @include breaks(tablet) {
+    @include base;
+    & > footer {
+      & > div.container {
+        & > h1.heading {
+          font-size: 4rem;
+          height: 8.8rem;
+          line-height: 4.4rem;
+          width: 45.7rem;
+        }
+        & > h2.subheading {
+          margin: 3.2rem auto 0 auto;
+          height: 5.2rem;
+          width: 57.3rem;
+        }
+        & > button.btn {
+          margin: 4rem auto 6.6rem auto;
+        }
+      }
+    }
+  }
+
+  @include breaks(desktop) {
+    @include base;
+    & > footer {
+      grid-template-columns: 1fr;
+      grid-template-rows: 8.4rem 2.8rem 30.8rem;
+      & > div.container {
+        align-items: center;
+        display: grid;
+        grid-column: 1;
+        grid-row: 3;
+        grid-template-columns: repeat(3, max-content);
+        grid-template-rows: 1fr;
+        justify-content: space-around;
+        padding: 0;
+        position: relative;
+        z-index: 0;
+
+        & > img.img-footer {
+          background-image: url("../../assets/desktop/image-footer.jpg");
+        }
+        & > h1.heading {
+          grid-column: 1;
+          grid-row: 1;
+
+          height: 8.8rem;
+          margin: 11.6rem 12.5rem 10.4rem 16.5rem;
+          width: 35rem;
+        }
+        & > h2.subheading {
+          grid-column: 2;
+          grid-row: 1;
+
+          height: 7.8rem;
+          margin: 11.6rem 9.2rem 11.4rem 0;
+          width: 35rem;
+        }
+        & > button.btn {
+          grid-column: 3;
+          grid-row: 1;
+          margin: 13.1rem 16.5rem 11.9rem 0;
+        }
+      }
+    }
+  }
+}

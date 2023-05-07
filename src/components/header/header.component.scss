@@ -1,0 +1,39 @@
+@use "../../styles/abstracts" as *;
+
+:host {
+  @include breaks(mobile) {
+    display: block;
+    grid-column: 1;
+    grid-row: 1;
+
+    & > header {
+      display: flex;
+      height: 100%;
+      justify-content: center;
+    }
+  }
+
+  @include breaks(tablet) {
+    display: block;
+    grid-column: 1;
+    grid-row: 1;
+
+    & > header {
+      display: flex;
+      height: 100%;
+      justify-content: center;
+    }
+  }
+
+  @include breaks(desktop) {
+    display: block;
+    grid-column: 1;
+    grid-row: 1;
+
+    & > header {
+      display: flex;
+      height: 100%;
+      justify-content: center;
+    }
+  }
+}

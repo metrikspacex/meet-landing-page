@@ -1,0 +1,12 @@
+@use "../../styles/abstracts" as *;
+
+:host {
+  @include breaks(mobile) {
+  }
+
+  @include breaks(tablet) {
+  }
+
+  @include breaks(desktop) {
+  }
+}
