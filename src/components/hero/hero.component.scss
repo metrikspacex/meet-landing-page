@@ -67,6 +67,10 @@
     height: 5.8rem;
     margin: 0 1.6rem 1.6rem 0;
     width: 19.3rem;
+    &:hover {
+      background: #71c0d4;
+      cursor: pointer;
+    }
   }
   span.download {
     color: #ffffff;
@@ -83,6 +87,10 @@
     height: 5.8rem;
     outline-color: transparent;
     width: 13.9rem;
+    &:hover {
+      background: #b18bdd;
+      cursor: pointer;
+    }
   }
 }
 
