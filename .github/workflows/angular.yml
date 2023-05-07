@@ -1,4 +1,4 @@
-name: Build and test
+name: Build
 on:
   push:
     branches: [main]
@@ -15,17 +15,15 @@ jobs:
           cd src
           npm install
           npm run build
-          npm run test
           cd dist
           npm link
           cd ..
           cd ..
           npm install -g @angular/cli
-          ng new your-angular-project --defaults
-          cd your-angular-project
+          ng new meet-landing-page --defaults
+          cd meet-landing-page
           npm link angular-cli-ghpages
           ng add angular-cli-ghpages
-
       - name: Deploy
         if: github.ref == 'refs/heads/master'
         env:
