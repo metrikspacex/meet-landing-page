@@ -2,7 +2,7 @@
   "files.exclude": {
     "**/.git": true,
     ".angular": true,
-    ".design": true,
+    ".design": false,
     "dist": true,
     ".editorconfig": true,
     ".eslintignore": true,
