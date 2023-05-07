@@ -1,44 +1,35 @@
-name: Angular GitHub CI
+name: Build and test
 on:
   push:
-    branches:
-      - main
+    branches: [main]
 jobs:
-  ci:
+  build-and-deploy:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [16.x]
     steps:
-      - uses: actions/checkout@v2
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
         with:
-          node-version: ${{ matrix.node-version }}
-      - name: Cache node modules
-        id: cache-nodemodules
-        uses: actions/cache@v2
+          node-version: 18
+      - name: Prepare
+        run: |
+          cd src
+          npm install
+          npm run build
+          npm run test
+          cd dist
+          npm link
+          cd ..
+          cd ..
+          npm install -g @angular/cli
+          ng new your-angular-project --defaults
+          cd your-angular-project
+          npm link angular-cli-ghpages
+          ng add angular-cli-ghpages
+
+      - name: Deploy
+        if: github.ref == 'refs/heads/master'
         env:
-          cache-name: cache-node-modules
-        with:
-          path: node_modules
-          key:
-            ${{ runner.os }}-build-${{ env.cache-name }}-${{
-            hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-build-${{ env.cache-name }}-
-            ${{ runner.os }}-build-
-            ${{ runner.os }}-
-      - name: Install Dependencies
-        if: steps.cache-nodemodules.outputs.cache-hit != 'true'
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          npm ci
-      - name: Build
-        run: |
-          npm run build -- --prod
-      - name: Lint
-        run: |
-          npm run lint
-      - name: Test
-        run: |
-          npm run test -- --prod
+          cd your-angular-project
+          ng deploy --no-silent --name="The Buildbot" --email="buildbot@angular2buch.de" --cname=angular-cli-ghpages.angular.schule
