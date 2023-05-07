@@ -1,12 +1,20 @@
 @use "../../styles/abstracts" as *;
 
+@mixin base {
+  & > section {
+  }
+}
+
 :host {
   @include breaks(mobile) {
+    @include base;
   }
 
   @include breaks(tablet) {
+    @include base;
   }
 
   @include breaks(desktop) {
+    @include base;
   }
 }

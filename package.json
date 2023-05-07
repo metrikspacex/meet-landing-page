@@ -54,6 +54,7 @@
   "scripts": {
     "build": "ng build",
     "build:ssr": "ng build && ng run meet-landing-page:server",
+    "deploy": "ng deploy --base-href=/meet-landing-page/",
     "dev:ssr": "ng run meet-landing-page:serve-ssr",
     "lint": "ng lint",
     "ng": "ng",

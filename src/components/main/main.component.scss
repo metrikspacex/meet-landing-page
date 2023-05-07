@@ -1,21 +1,21 @@
 @use "../../styles/abstracts" as *;
 
+@mixin base {
+  display: block;
+  grid-column: 1;
+  grid-row: 2;
+}
+
 :host {
   @include breaks(mobile) {
-    display: block;
-    grid-column: 1;
-    grid-row: 2;
+    @include base;
   }
 
   @include breaks(tablet) {
-    display: block;
-    grid-column: 1;
-    grid-row: 2;
+    @include base;
   }
 
   @include breaks(desktop) {
-    display: block;
-    grid-column: 1;
-    grid-row: 2;
+    @include base;
   }
 }

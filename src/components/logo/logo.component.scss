@@ -1,24 +1,22 @@
 @use "../../styles/abstracts" as *;
 
+@mixin base {
+  & > svg {
+    margin-bottom: 54px;
+    margin-top: 48px;
+  }
+}
+
 :host {
   @include breaks(mobile) {
-    & > svg {
-      margin-bottom: 54px;
-      margin-top: 48px;
-    }
+    @include base;
   }
 
   @include breaks(tablet) {
-    & > svg {
-      margin-bottom: 64px;
-      margin-top: 48px;
-    }
+    @include base;
   }
 
   @include breaks(desktop) {
-    & > svg {
-      margin-bottom: 61px;
-      margin-top: 80px;
-    }
+    @include base;
   }
 }
