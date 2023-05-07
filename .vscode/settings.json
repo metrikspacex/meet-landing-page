@@ -3,7 +3,7 @@
     "**/.git": true,
     ".angular": true,
     ".design": true,
-    ".dist": true,
+    "dist": true,
     ".editorconfig": true,
     ".eslintignore": true,
     ".eslintrc": true,
