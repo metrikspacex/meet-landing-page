@@ -48,7 +48,7 @@
     "sass": "^1.62.1",
     "typescript": "~5.0.2"
   },
-  "homepage": "https://metrikspacex.github.io/meet-landing-page",
+  "homepage": "https://metrikspacex-meet-landing-page.netlify.app/",
   "name": "meet-landing-page",
   "private": true,
   "scripts": {
