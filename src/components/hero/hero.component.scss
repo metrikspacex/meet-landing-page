@@ -118,7 +118,8 @@
     }
   }
 
-  @include breaks(desktop) {
+  // Mark
+  @media (1440px <= width) {
     @include base;
     grid-template-rows: 35.8rem;
     height: 35.8rem;
@@ -127,6 +128,7 @@
       background-image: url("../../assets/desktop/image-hero-left.png"),
         url("../../assets/desktop/image-hero-right.png");
       background-size: auto auto, auto auto;
+      width: 100%;
     }
     div.container {
       align-self: center;
