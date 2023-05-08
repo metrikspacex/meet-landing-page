@@ -11,7 +11,7 @@
     ".gitignore": true,
     ".prettierignore": true,
     ".prettierrc": true,
-    ".screenshots": true,
+    ".screenshots": false,
     "angular.json": true,
     "ngsw-config.json": true,
     "node_modules": true,
