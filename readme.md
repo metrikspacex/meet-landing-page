@@ -36,7 +36,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution](https://github.com/metrikspacex/meet-landing-page)
-- Live Site URL: [Site](https://metrikspacex.github.io/meet-landing-page/)
+- Live Site URL: [Site]([https://metrikspacex.github.io/meet-landing-page/](https://metrikspacex-meet-landing-page.netlify.app/)
 
 ## My process
 
